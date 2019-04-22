@@ -22,3 +22,6 @@ set cursorline
 "
 " " show the matching part of the pair for [] {} and ()
 set showmatch
+"
+"" make backspace override other  settings
+set backspace=2
