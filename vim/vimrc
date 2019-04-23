@@ -25,3 +25,7 @@ set showmatch
 "
 "" make backspace override other  settings
 set backspace=2
+
+"" show file name in statusline
+set laststatus=2
+set statusline=%f "tail of the filename
