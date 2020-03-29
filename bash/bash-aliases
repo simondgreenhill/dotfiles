@@ -1,0 +1,32 @@
+# directory management
+alias ll='ls -lah'
+alias ..='cd ..'
+alias ...='cd ../..'
+
+# edit configs
+alias eb='vim ~/dotfiles/bash'
+alias ev='vim ~/dotfiles/vim/vimrc'
+alias eg='vim ~/dotfiles/git'
+
+# reload .bashrc
+alias reload='. ~/.bashrc'
+
+# tmux
+alias tmux ns='tmux new-session -s $1'
+
+# git
+alias gst='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
+
+# Show $PATH in prettier format
+# credit: https://github.com/stephenturner/oneliners
+alias showpath='echo $PATH | tr ":" "\n" | nl'
+
+# conda
+alias car='conda activate risingverse'
+alias car27='conda activate risingverse-py27'
+
+# run the todo utility
+alias todo='~/.todo.sh'

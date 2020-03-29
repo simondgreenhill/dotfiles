@@ -1,0 +1,73 @@
+# Data #
+###################
+*.csv
+*.RData
+*.dta
+*.png
+*.jpg
+*.shx
+*.shp
+*.prj
+*.dbf
+*.cpg
+*.tsv
+*.sdmx
+*.sbn 
+*.sbx 
+*.xml
+*.tif
+*.asc
+*.dat
+*.nit
+*.htm
+*.tfw
+*.ovr
+*.doc
+*.mxd
+*.avl
+*.adf
+*.nc
+*.nc4
+*.dir
+*.001
+
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+.Rhistory 
+*.aux
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

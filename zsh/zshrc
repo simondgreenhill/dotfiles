@@ -95,7 +95,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# load my my bash-aliases from my dotfiles
+source ~/dotfiles/bash/bash-aliases
 
 # miniconda3 path: 
 export PATH="/Users/simongreenhill/miniconda3/bin:$PATH"
 . /Users/simongreenhill/miniconda3/etc/profile.d/conda.sh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
