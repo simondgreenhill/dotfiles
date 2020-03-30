@@ -12,7 +12,7 @@ alias eg='vim ~/dotfiles/git'
 alias reload='. ~/.bashrc'
 
 # tmux
-alias tmux ns='tmux new-session -s $1'
+alias tmuxns='tmux new-session -s $1'
 
 # git
 alias gst='git status'
