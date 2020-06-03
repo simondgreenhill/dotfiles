@@ -6,7 +6,7 @@ syntax enable
 set clipboard+=unnamed
 "Set encoding and line numbering
 set encoding=utf-8
-set nu
+set nu rnu
 "
 " indent when moving to the next line while writing code
 set autoindent
