@@ -18,6 +18,7 @@ alias tmux ns='tmux new-session -s $1'
 alias gst='git status'
 alias ga='git add'
 alias gc='git commit -m'
+alias gac='git commit -a -m'
 alias gp='git push'
 
 # Show $PATH in prettier format

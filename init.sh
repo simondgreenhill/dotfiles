@@ -16,7 +16,7 @@ else
 fi
 
 # archive old configs in a new directory for safekeeping
-mkdir ~/config_archive
+mkdir -p ~/config_archive
 for FILE in .gitignore .gitconfig .bash_profile .bashrc .vimrc .zshrc
 do
         touch $FILE
@@ -27,6 +27,7 @@ done
 # NOTE--should update this and turn it into a loop
 # ln -sf $DIR/bash/profile ~/.bash_profile
 ln -sf $DIR/git/gitconfig ~/.gitconfig
+ln -sf $DIR/git/gitignore ~/.gitignore
 ln -sf $DIR/vim/vimrc ~/.vimrc
 ln -sf $DIR/zsh/zshrc ~/.zshrc
 

@@ -29,3 +29,7 @@ set backspace=2
 "" show file name in statusline
 set laststatus=2
 set statusline=%f "tail of the filename
+
+"" add a ruler at 79 characters
+set colorcolumn=79
+highlight ColorColumn ctermbg=0
