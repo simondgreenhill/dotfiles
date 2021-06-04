@@ -1,6 +1,6 @@
 #! /bin/bash
 
-DIR=$(cd `dirname $0` && pwd)
+DIR=`pwd`
 
 # warn about zsh and ohmyzsh if not installed 
 if ! [[ -f "~/.zsh_history" ]]; then

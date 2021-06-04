@@ -2,9 +2,12 @@
 alias ll='ls -lah'
 alias ..='cd ..'
 alias ...='cd ../..'
+alias phd='cd /Volumes/GoogleDrive/My\ Drive/PhD'
+alias class='cd /Volumes/GoogleDrive/My\ Drive/PhD/Y1S2/coursework'
 
 # edit configs
 alias eb='vim ~/dotfiles/bash'
+alias eba='vim ~/dotfiles/bash-aliases'
 alias ev='vim ~/dotfiles/vim/vimrc'
 alias eg='vim ~/dotfiles/git'
 
@@ -31,3 +34,20 @@ alias car27='conda activate risingverse-py27'
 
 # run the todo utility
 alias todo='~/.todo.sh'
+
+# start forwarding from Tabei to a port
+forward() {
+    ssh -N -f -L ${1}:localhost:${2} sgreenhill@tabei.gspp.berkeley.edu
+}
+
+# run init for AHP (create tmux session, activate conda)
+init ahp(){
+    tmux new-session -s ahp
+    conda activate stitching
+}
+
+# run init for 100 maps
+init maps(){
+    tmux new-session -s maps
+    conda activate maps-env
+}

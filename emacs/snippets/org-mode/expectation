@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: expectation
+# key: \e
+# --
+\mathbb{E}\left[ $1 \right]$0
