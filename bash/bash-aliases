@@ -37,7 +37,7 @@ alias todo='~/.todo.sh'
 
 # start forwarding from Tabei to a port
 forward() {
-    ssh -N -f -L ${1}:localhost:${2} sgreenhill@tabei.gspp.berkeley.edu
+    ssh -N -f -L ${2}:localhost:${2} sgreenhill@${1}.gspp.berkeley.edu
 }
 
 # run init for AHP (create tmux session, activate conda)

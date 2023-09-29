@@ -2,6 +2,14 @@
 
 DIR=`pwd`
 
+# archive old configs in a new directory for safekeeping
+mkdir -p ~/config_archive
+for FILE in .gitignore .gitconfig .bash_profile .bashrc .vimrc .zshrc
+do
+        touch $FILE
+        ls ~/config_archive >> $FILE
+done
+
 # warn about zsh and ohmyzsh if not installed 
 if ! [[ -f "~/.zsh_history" ]]; then
    echo "WARNING: Zsh not installed."
@@ -16,14 +24,6 @@ else
     ln -sf $DIR/zsh/zshrc ~/.zshrc
     source ~/.zshrc
 fi
-
-# archive old configs in a new directory for safekeeping
-mkdir -p ~/config_archive
-for FILE in .gitignore .gitconfig .bash_profile .bashrc .vimrc .zshrc
-do
-        touch $FILE
-        ls ~/config_archive >> $FILE
-done
 
 # create symlinks
 # NOTE--should update this and turn it into a loop
